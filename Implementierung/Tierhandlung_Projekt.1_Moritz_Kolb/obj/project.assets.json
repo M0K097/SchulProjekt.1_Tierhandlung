@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Unterlagen_2_Schuljahr\\C# Projekte\\Schuler_Projekte\\Tierhandlung_Projekt.1_Moritz_Kolb\\Tierhandlung_Projekt.1_Moritz_Kolb\\Tierhandlung_Projekt.1_Moritz_Kolb.csproj",
+      "projectUniqueName": "C:\\Users\\moritz.kolb\\Desktop\\SchulProjekt.1_Tierhandlung\\Implementierung\\Tierhandlung_Projekt.1_Moritz_Kolb\\Tierhandlung_Projekt.1_Moritz_Kolb.csproj",
       "projectName": "Tierhandlung_Projekt.1_Moritz_Kolb",
-      "projectPath": "H:\\Unterlagen_2_Schuljahr\\C# Projekte\\Schuler_Projekte\\Tierhandlung_Projekt.1_Moritz_Kolb\\Tierhandlung_Projekt.1_Moritz_Kolb\\Tierhandlung_Projekt.1_Moritz_Kolb.csproj",
+      "projectPath": "C:\\Users\\moritz.kolb\\Desktop\\SchulProjekt.1_Tierhandlung\\Implementierung\\Tierhandlung_Projekt.1_Moritz_Kolb\\Tierhandlung_Projekt.1_Moritz_Kolb.csproj",
       "packagesPath": "C:\\Users\\moritz.kolb\\.nuget\\packages\\",
-      "outputPath": "H:\\Unterlagen_2_Schuljahr\\C# Projekte\\Schuler_Projekte\\Tierhandlung_Projekt.1_Moritz_Kolb\\Tierhandlung_Projekt.1_Moritz_Kolb\\obj\\",
+      "outputPath": "C:\\Users\\moritz.kolb\\Desktop\\SchulProjekt.1_Tierhandlung\\Implementierung\\Tierhandlung_Projekt.1_Moritz_Kolb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
