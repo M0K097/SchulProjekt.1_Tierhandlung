@@ -11,22 +11,38 @@ namespace Tierhandlung_Projekt._1_Moritz_Kolb
         static private void tier_hinzufügen(Tier tier) => alle_tiere.Add(tier);
         static public void tier_erstellen()
         {
-            Console.WriteLine("Tierart:");
-            var art = Console.ReadLine();
-            Console.WriteLine("Tiername:");
-            var name = Console.ReadLine();
-            Console.WriteLine("Geburtsdatum:");
-            var datum = Convert.ToDateTime(Console.ReadLine());
+            try
+            {
+                Console.WriteLine("Tierart:");
+                var art = Console.ReadLine();
+                Console.WriteLine("Tiername:");
+                var name = Console.ReadLine();
+                Console.WriteLine("Geburtsdatum:");
+                var datum = Convert.ToDateTime(Console.ReadLine());
 
-            if (art != null && name != null)
-            {
-                tier_hinzufügen(new Tier(art, name, datum));
+
+                if (art != null && name != null)
+                {
+                    tier_hinzufügen(new Tier(art, name, datum));
+                }
+                else
+                {
+                    throw new Exception("Tierart oder Name war NULL");
+                }
             }
-            else
+            catch(Exception e)
             {
-                Console.WriteLine("Das Tier konnte nicht hinzugefügt werden");
+                Console.WriteLine($"Fehler: {e}");
             }
         }
+
+        static public List<Tier> filter_nach_tier(string suchbegriff)
+        {
+            var gefilterte_tiere = alle_tiere.Where((Tier t) => t.name == suchbegriff).ToList();
+            return gefilterte_tiere;
+        }
+
+
     }
     public class Tier
     {
