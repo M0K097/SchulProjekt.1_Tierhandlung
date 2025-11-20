@@ -19,6 +19,8 @@ namespace Tierhandlung_Projekt._1_Moritz_Kolb
     public static class Tierheim
     {
         static List<Tier> alle_tiere = new ();
+        static public void tier_hinzufügen(Tier tier) => alle_tiere.Add(tier);
+   
 
     }
     public class Tier
