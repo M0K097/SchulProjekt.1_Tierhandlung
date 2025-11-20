@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Tierhandlung_Projekt._1_Moritz_Kolb
+﻿namespace Tierhandlung_Projekt._1_Moritz_Kolb
 {   
     public static class Tierheim
     {
