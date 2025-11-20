@@ -1,2 +1,3 @@
-/Tierhandlung_Prototype/obj
-/Tierhandlung_Prototype/bin
+obj/
+bin/
+.vs/
