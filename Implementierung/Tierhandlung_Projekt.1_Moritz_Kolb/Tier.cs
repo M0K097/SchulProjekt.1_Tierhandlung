@@ -1,12 +1,8 @@
-﻿using System.ComponentModel.Design;
-
-namespace Tierhandlung_Projekt._1_Moritz_Kolb
+﻿namespace Tierhandlung_Projekt._1_Moritz_Kolb
 {   
     public static class Tierheim
     {
-        static public List<Tier> alle_tiere = new ();
-        static public List<Tier> ausgewählte_tiere = new();
-        
+        static public List<Tier> alle_tiere = new ();       
         static public void tier_hinzufügen()
         {
             try
@@ -21,21 +17,20 @@ namespace Tierhandlung_Projekt._1_Moritz_Kolb
                 if (art != null && name != null)
                 {
                     alle_tiere.Add(new Tier(art, name, datum));
-                }
-                else
-                {
-                    throw new Exception("Tierart oder Name war NULL");
+                    Console.WriteLine($"{art}{name} wurde erfoglreich hinzugefügt");
                 }
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 Console.WriteLine($"Fehler: {e}");
             }
+
+            Console.WriteLine("Drücke eine beliebige Taste...");
+            Console.ReadLine();
         }
 
         static public void filter_nach_tier()
         {
-
             string suchbegriff = "";
             var suche = Console.ReadLine();
             if (suche is not null)
@@ -65,7 +60,6 @@ namespace Tierhandlung_Projekt._1_Moritz_Kolb
         public string name { get; set; }
         public DateTime geburtsdatum { get; set; }
         public string beschreibung { get; set; }
-        public bool reserviert { get; set; }
 
         public Tier(string art, string name_des_tieres, DateTime geburtsdatum)
         {
@@ -73,7 +67,6 @@ namespace Tierhandlung_Projekt._1_Moritz_Kolb
             name = name_des_tieres;
             this.geburtsdatum = geburtsdatum;
             beschreibung = "keine Beschreibung";
-            reserviert = false;
             
         }
             
