@@ -7,7 +7,7 @@ Tiere bekommen ebenfalls eine ID als Primärschlüssel sowie ihre Art, den Namen
 
 ## 2)
 Ich habe die Beziehung n zu m gewählt, weil ein Nutzer mehrere Anfragen stellen kann, genauso wie ein Tier von mehreren Nutzern gleichzeitig angefragt werden kann.
-Eine weitere Tabelle verknüpft die Tier_ID mit der Nutzer_ID indem sie diese dort als Foreign Keys in einer Zeile verknüpft und der Zeile automatisch eine eindeutige ID mit Identity zugewiesen.
+Eine weitere Tabelle verknüpft die Tier_ID mit der Nutzer_ID indem sie diese dort als Foreign Keys in einer Zeile verknüpft und der Zeile automatisch eine eindeutige ID mit Identity zugewiesen wird.
 
 ## 3)
 Die IDs beider Tabellen haben den Datentyp int und werden mit IDENTITY automatisch generiert, damit sie eindeutig sind.
