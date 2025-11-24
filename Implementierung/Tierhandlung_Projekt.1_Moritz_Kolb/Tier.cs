@@ -33,7 +33,7 @@
 
         static public List<Tier> filter_nach_tier(string suchbegriff)
         {
-            var gefilterte_tiere = alle_tiere.Where((Tier t) => t.name == "*"+suchbegriff+"*").ToList();
+            var gefilterte_tiere = alle_tiere.Where((Tier t) => t.name == suchbegriff).ToList();
             return gefilterte_tiere;
         }
 
